@@ -53,6 +53,15 @@ const products = [
       price: 140,
       countInStock: 10,
     },
+    {
+      name: "Realme 8 Pro",
+      imageUrl:
+        "https://images.unsplash.com/photo-1564424224827-cd24b8915874?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80",
+      description:
+        "JBL Flip 4 is the next generation in the award-winning Flip series; it is a portable Bluetooth speaker that delivers surprisingly powerful stereo sound. This compact speaker is powered by a 3000mAh rechargeable Li-ion battery that offers up to 12 hours of continuous, high-quality audio playtime.",
+      price: 140,
+      countInStock: 10,
+    },
   ];
   
   module.exports = products;

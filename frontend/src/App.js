@@ -14,6 +14,7 @@ import CartScreen from './screens/CartScreen'
 import Navbar from './components/Navbar'
 import Backdrop from './components/Backdrop'
 import SideDrawer from './components/SideDrawer'
+import AddItem from './components/AddItem';
 
 
 
@@ -28,8 +29,11 @@ function App() {
     <main>
       <Switch>
         <Route exact path='/' component={HomeScreen}></Route>
+        <Route exact path="/product/additem" component={AddItem}></Route>
         <Route exact path="/product/:id" component={ProductScreen}></Route>
         <Route exact path="/cart" component={CartScreen}></Route>
+        <Route exact path="/additem" component={AddItem}></Route>
+
       </Switch>
     </main>
     </Router>

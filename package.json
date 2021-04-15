@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server":"nodemon backend/server.js",
-    "client":"npm start --prefix frontend",
-    "dev":"concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seederScript.js"
   },
   "repository": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ayushsinghal23/mernapp#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.3"

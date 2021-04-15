@@ -34,6 +34,11 @@ const Navbar = ({click}) => {
                    Shop
                  </Link>
              </li>
+             <li>
+                 <Link to="/additem">
+                   additem
+                 </Link>
+             </li>
          </ul>
 
          <div className="hamburger__menu" onClick={click}>

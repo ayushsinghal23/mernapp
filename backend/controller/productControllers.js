@@ -23,7 +23,18 @@ const getProductById= async(req,res)=>{
     }
 }
 
+const addItem = (req,res)=>{
+    const name=res.body.name;
+    const desc=res.body.desc;
+    const price=res.body.cost;
+    const quantity=res.body.quant;
+    const newProduct=new Product({
+        name,desc,price,quantity
+    })
+    newProduct.save();
+}
+
 module.exports=
 {
-    getAllProducts,getProductById
+    getAllProducts,getProductById,addItem
 }
